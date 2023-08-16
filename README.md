@@ -1,2 +1,1 @@
-เมื่อใกล้สอบ
-![p](https://github.com/ppooh1/ppooh1.github.io/assets/109036814/d80e73b8-f2f9-4e57-9377-89ddd4875753)
+![Me-in-maths-exam-help-meme-1431](https://github.com/ppooh1/ppooh1.github.io/assets/109036814/2e615050-ed87-411f-9056-b84082738549)
