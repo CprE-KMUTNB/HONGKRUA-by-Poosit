@@ -1,24 +1,31 @@
-
 html {
-	font-size:62.5%;
+  font-size: 62.5%;
 }
+
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-ul, li {
-	list-style: none;
+
+ul,
+li {
+  list-style: none;
 }
+
 input {
-	border: none;
+  border: none;
 }
+
 body {
   width: 144.8rem;
-}.sign-in-aGy {
+}
+
+.sign-in-aGy {
   width: 100%;
   height: 102.4rem;
   position: relative;
 }
+
 .sign-in-aGy .desktop-1-ua9 {
   width: 144rem;
   height: 102.4rem;
@@ -28,12 +35,14 @@ body {
   overflow: hidden;
   background-color: #ffffff;
 }
+
 .sign-in-aGy .desktop-1-ua9 .rectangle-46-EsK {
   width: 72rem;
   height: 125.1rem;
   object-fit: cover;
   vertical-align: top;
 }
+
 .sign-in-aGy .group-12-Mww {
   box-sizing: border-box;
   padding: 8rem 23.5rem 33rem 24.7rem;
@@ -48,8 +57,9 @@ body {
   background-color: #fffbf2;
   border-radius: 5rem 0 0 0;
 }
+
 .sign-in-aGy .group-12-Mww .item--FnR {
-  margin: 0rem 0rem 3.4rem 8.7rem;
+  margin: 0rem 0rem 3.4rem 0rem;
   font-size: 4rem;
   font-weight: 800;
   line-height: 1.1725;
@@ -59,6 +69,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury {
   margin: 0rem 0.7rem 3.5rem 0rem;
   box-sizing: border-box;
@@ -73,11 +84,13 @@ body {
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-bzh {
   margin-right: 2.9rem;
   width: 29.6rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-bzh .item--Miy {
   margin-bottom: 0.6rem;
   font-size: 1.4rem;
@@ -87,6 +100,7 @@ body {
   font-family: Helvetica, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-bzh .sec-G5F {
   box-sizing: border-box;
   padding: 0.8rem 0.8rem 0.6rem 0.8rem;
@@ -101,12 +115,14 @@ body {
   background-color: rgba(249, 249, 249, 0.8000000119);
   border-radius: 0.4rem;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-8NM {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-8NM .sec-J1w {
   margin-bottom: 0.6rem;
   width: 100%;
@@ -114,6 +130,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-8NM .sec-J1w .item--Fhs {
   margin-right: 15.7rem;
   font-size: 1.4rem;
@@ -124,6 +141,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-8NM .sec-J1w .item--B5j {
   font-size: 1.4rem;
   font-weight: 400;
@@ -133,6 +151,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-8NM .sec-sDT {
   box-sizing: border-box;
   padding: 0.8rem 0.8rem 0.6rem 0.8rem;
@@ -148,6 +167,7 @@ body {
   border-radius: 0.4rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .sec-jmT {
   margin-right: 2.9rem;
   width: 29.6rem;
@@ -166,6 +186,7 @@ body {
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .frame-61-d69 {
   margin: 0rem 7.6rem 0rem 4.4rem;
   width: calc(100% - 12rem);
@@ -173,6 +194,7 @@ body {
   position: relative;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .frame-61-d69 .item--MH3 {
   width: 12rem;
   height: 1.8rem;
@@ -187,6 +209,7 @@ body {
   font-family: Helvetica, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .sign-in-aGy .group-12-Mww .email-login-ury .frame-61-d69 .item--Rnh {
   width: 11.8rem;
   height: 1.8rem;
@@ -202,6 +225,7 @@ body {
   font-family: Helvetica, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP {
   margin-right: 1.3rem;
   width: 34.5rem;
@@ -212,6 +236,7 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-w-google-BvH {
   margin-left: 0.1rem;
   box-sizing: border-box;
@@ -224,6 +249,7 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-w-google-BvH .google-logo-htd {
   margin-right: 1.6rem;
   width: 2.4rem;
@@ -232,6 +258,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-w-google-BvH .google-SrD {
   font-size: 2rem;
   font-weight: 500;
@@ -241,6 +268,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-with-facebook-left-aligned-fixed-uE1 {
   margin-left: 0.1rem;
   box-sizing: border-box;
@@ -252,6 +280,7 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-with-facebook-left-aligned-fixed-uE1 .facebook-logo-p65 {
   margin: 0rem 1.6rem 0.2rem 0rem;
   width: 2.4rem;
@@ -260,6 +289,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-with-facebook-left-aligned-fixed-uE1 .facebook-8cZ {
   font-size: 2rem;
   font-weight: 700;
@@ -269,6 +299,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-with-apple-left-aligned-fixed-r2m {
   margin-right: 0.1rem;
   box-sizing: border-box;
@@ -280,6 +311,7 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-with-apple-left-aligned-fixed-r2m .apple-logo-9nZ {
   margin: 0rem 1.6rem 0.2rem 0rem;
   width: 2.4rem;
@@ -288,6 +320,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+
 .sign-in-aGy .group-12-Mww .continue-with-TjP .continue-with-apple-left-aligned-fixed-r2m .apple-5RK {
   font-size: 2rem;
   font-weight: 500;
