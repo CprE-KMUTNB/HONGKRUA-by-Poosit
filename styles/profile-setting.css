@@ -1,0 +1,718 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.profile-setting-rbB {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffbf2;
+}
+.profile-setting-rbB .taskbar-C9F {
+  margin-bottom: 8.5rem;
+  width: 100%;
+  height: 10.9rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .rectangle-1-Kjf {
+  width: 144rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+}
+.profile-setting-rbB .taskbar-C9F .item--rzV {
+  width: 17rem;
+  height: 3.3426rem;
+  position: absolute;
+  left: 98rem;
+  top: 6.1rem;
+}
+.profile-setting-rbB .taskbar-C9F .item--rzV .bar-aQh {
+  width: 17rem;
+  height: 3.3426rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.profile-setting-rbB .taskbar-C9F .item--rzV .item--vUZ {
+  width: 3.1457rem;
+  height: 3.1197rem;
+  position: absolute;
+  left: 13.5643rem;
+  top: 0.1353rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.profile-setting-rbB .taskbar-C9F .item--rzV .item--EEM {
+  width: 4.9rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 1.4912rem;
+  top: 0.971rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #000000;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .item--htd {
+  width: 12.125rem;
+  height: 2.6611rem;
+  position: absolute;
+  left: 118.2rem;
+  top: 6.8rem;
+  display: flex;
+  align-items: flex-end;
+}
+.profile-setting-rbB .taskbar-C9F .item--htd .group-1-Dry {
+  margin: 0rem 0.425rem 0.57rem 0rem;
+  width: 1.1rem;
+  height: 2.0915rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .item--htd .item--wny {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #ffffff;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .item--Fof {
+  width: 6.8rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 45.2rem;
+  top: 7.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #ffffff;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .item--kEd {
+  width: 8.7rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 35.4rem;
+  top: 7.9rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #ffffff;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .zabzab-qWy {
+  width: 11.4rem;
+  height: 7.2247rem;
+  position: absolute;
+  left: 18.2rem;
+  top: 2rem;
+}
+.profile-setting-rbB .taskbar-C9F .zabzab-qWy .krua-kdw {
+  width: 5.7rem;
+  height: 2.7rem;
+  position: absolute;
+  left: 4.1682rem;
+  top: 4.4852rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3025;
+  color: #ffffff;
+  font-family: Inika, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .zabzab-qWy .item--4ed {
+  width: 2.4189rem;
+  height: 2.7395rem;
+  position: absolute;
+  left: 0.7682rem;
+  top: 4.4852rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.profile-setting-rbB .taskbar-C9F .zabzab-qWy .hong-zYH {
+  width: 11.4rem;
+  height: 5.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.3025;
+  color: #ffffff;
+  font-family: Inika, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 {
+  width: 144rem;
+  height: 10.9rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .rectangle-1-Tgm {
+  width: 144rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #010a10;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--Qru {
+  width: 26rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 58.9rem;
+  top: 8.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--t1P {
+  width: 17rem;
+  height: 3.3426rem;
+  position: absolute;
+  left: 95.5rem;
+  top: 6.2rem;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--t1P .bar-zq7 {
+  width: 17rem;
+  height: 3.3426rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--t1P .item--Yrd {
+  width: 3.1457rem;
+  height: 3.1197rem;
+  position: absolute;
+  left: 13.5643rem;
+  top: 0.1353rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--t1P .item--UEV {
+  width: 4.9rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 1.4912rem;
+  top: 0.971rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #010a10;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--mDb {
+  width: 17.716rem;
+  height: 3rem;
+  position: absolute;
+  left: 114.3rem;
+  top: 7.7rem;
+  display: flex;
+  align-items: flex-start;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--mDb .group-1-5k5 {
+  margin-right: 0.8rem;
+  width: 1.016rem;
+  height: 2.0915rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--mDb .item--E7B {
+  margin-top: 0.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--vkh {
+  width: 10.1rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 48rem;
+  top: 8.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .item--RSZ {
+  width: 13rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 35.5rem;
+  top: 7.9rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .zabzab-Wyo {
+  width: 11.4rem;
+  height: 7.2247rem;
+  position: absolute;
+  left: 18.2rem;
+  top: 2rem;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .zabzab-Wyo .krua-eaD {
+  width: 5.7rem;
+  height: 2.7rem;
+  position: absolute;
+  left: 4.1682rem;
+  top: 4.4852rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3025;
+  color: #fffbf2;
+  font-family: Inika, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .zabzab-Wyo .item--AYZ {
+  width: 2.4189rem;
+  height: 2.7395rem;
+  position: absolute;
+  left: 0.7682rem;
+  top: 4.4852rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .zabzab-Wyo .hong-hHb {
+  width: 11.4rem;
+  height: 5.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.3025;
+  color: #fffbf2;
+  font-family: Inika, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y {
+  box-sizing: border-box;
+  padding: 2rem 11.984rem 0.6rem 18.2rem;
+  width: 144rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  background-color: #010a10;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .zabzab-8Nu {
+  margin: 0rem 5.611rem 0.675rem 0rem;
+  width: 11.6894rem;
+  height: 7.2247rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .zabzab-8Nu .krua-41f {
+  width: 5.7rem;
+  height: 2.7rem;
+  position: absolute;
+  left: 4.1682rem;
+  top: 4.4852rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3025;
+  color: #fffbf2;
+  font-family: Inika, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .zabzab-8Nu .item--mRs {
+  width: 2.4189rem;
+  height: 2.7395rem;
+  position: absolute;
+  left: 0.7682rem;
+  top: 4.4852rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .zabzab-8Nu .hong-gHw {
+  width: 11.4rem;
+  height: 5.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.3025;
+  color: #fffbf2;
+  font-family: Inika, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-tuwy-QDw {
+  margin-right: 0.8rem;
+  width: 22.6rem;
+  height: 2.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-tuwy-QDw .item--jn1 {
+  width: 10.1rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 12.5rem;
+  top: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-tuwy-QDw .item--dMb {
+  width: 13rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-wfff-itq {
+  margin-right: 2.5045rem;
+  width: 52.7955rem;
+  height: 4.5rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-wfff-itq .item--sFw {
+  width: 26rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 0;
+  top: 1.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-wfff-itq .item-1-kad {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  width: 26.8955rem;
+  height: 4.1197rem;
+  cursor: pointer;
+  position: absolute;
+  left: 25.9rem;
+  top: 0;
+  background-color: #ffffff;
+  border-radius: 2rem;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-wfff-itq .item-1-kad .frame-17-3pd {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 12rem;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-wfff-itq .item-1-kad .frame-17-3pd .item--ooo {
+  margin: 0rem 16.25rem 0.204rem 0rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: rgba(153, 153, 153, 0.6000000238);
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .auto-group-wfff-itq .item-1-kad .frame-17-3pd .item--iQy {
+  width: 3.1457rem;
+  height: 3.1197rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .item--cWM {
+  margin-bottom: 0.0809rem;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .item--cWM .group-1-AGy {
+  margin-right: 0.516rem;
+  width: 1.4rem;
+  height: 2.3915rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .taskbar-C9F .footer-vB3 .navi-24y .item--cWM .item--JPB {
+  margin-top: 0.4191rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT {
+  margin: 0rem 25.5rem 25.3rem 25.5rem;
+  width: calc(100% - 51rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Lam {
+  margin: 0.3rem 10.9rem 0rem 0rem;
+  width: 27.1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Lam .mkwmgxkf400x400-1-f7F {
+  margin-bottom: 2.1rem;
+  width: 27.1rem;
+  height: 27.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Lam .frame-66-NnM {
+  margin: 0 3.5rem;
+  box-sizing: border-box;
+  padding: 1.3rem 4.2rem 0rem 4.3rem;
+  width: calc(100% - 7rem);
+  background-color: #a50113;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Lam .frame-66-NnM .item--6iM {
+  max-width: 11.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #ffffff;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs {
+  box-sizing: border-box;
+  padding: 2.4rem;
+  width: 55rem;
+  height: 19.5rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq {
+  width: 32.4rem;
+  height: 100%;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .frame-65-Sfj {
+  margin-bottom: 0.1rem;
+  display: flex;
+  align-items: flex-start;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .frame-65-Sfj .item--bHj {
+  margin-right: 1.6rem;
+  max-width: 6.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .frame-65-Sfj .gfish-HwF {
+  margin-right: 2.3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .frame-65-Sfj .item--qSy {
+  max-width: 7.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #a50113;
+  font-family: Helvetica, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .mail-jHT {
+  width: 100%;
+  display: flex;
+  column-gap: 2.2rem;
+  align-items: center;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .mail-jHT .item--H45 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .mail-jHT .gfishemailcom-bqT {
+  margin-bottom: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #111111;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .mail-jHT .item--96H {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #a50113;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .auto-group-mha9-Ff7 {
+  box-sizing: border-box;
+  padding-top: 2.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .auto-group-mha9-Ff7 .frame-67-bU5 {
+  margin: 0rem 6.2rem 2.05rem 0rem;
+  width: calc(100% - 6.2rem);
+  height: 2.15rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .auto-group-mha9-Ff7 .frame-67-bU5 .item--8D7 {
+  margin: 0rem 0.7rem 0.05rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .auto-group-mha9-Ff7 .frame-67-bU5 .item--qNR {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .auto-group-mha9-Ff7 .frame-67-bU5 .item--qNR .item--BSH {
+  margin: 0.05rem 2.1rem 0rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .auto-group-mha9-Ff7 .frame-67-bU5 .item--qNR .item--Vxm {
+  margin-bottom: 0.05rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #a50113;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .auto-group-jpjf-CjT .item--Nfs .frame-63-Hnq .auto-group-mha9-Ff7 .item--oTf {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #a50113;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .footer-h3F {
+  box-sizing: border-box;
+  padding: 4.1rem 20.4rem 6.9rem 101.9rem;
+  width: 100%;
+  background-color: #010a10;
+  flex-shrink: 0;
+}
+.profile-setting-rbB .footer-h3F .facebook-zabzab-instagram-zabzab-youtube-zabzab-qQM {
+  max-width: 21.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499999364;
+  color: #fffbf2;
+  font-family: Island Moments, 'Source Sans Pro';
+}
+.profile-setting-rbB .footer-h3F .facebook-zabzab-instagram-zabzab-youtube-zabzab-qQM .facebook-zabzab-instagram-zabzab-youtube-zabzab-qQM-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2575;
+  color: #fffbf2;
+  font-family: Abhaya Libre ExtraBold, 'Source Sans Pro';
+}
+.profile-setting-rbB .footer-h3F .facebook-zabzab-instagram-zabzab-youtube-zabzab-qQM .facebook-zabzab-instagram-zabzab-youtube-zabzab-qQM-sub-1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.1825;
+  color: #fffbf2;
+  font-family: ABeeZee, 'Source Sans Pro';
+}
