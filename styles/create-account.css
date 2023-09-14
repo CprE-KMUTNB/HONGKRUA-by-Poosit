@@ -1,24 +1,31 @@
-
 html {
-	font-size:62.5%;
+  font-size: 62.5%;
 }
+
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-ul, li {
-	list-style: none;
+
+ul,
+li {
+  list-style: none;
 }
+
 input {
-	border: none;
+  border: none;
 }
+
 body {
   width: 144.5rem;
-}.create-account-GX3 {
+}
+
+.create-account-GX3 {
   width: 100%;
   height: 102.4rem;
   position: relative;
 }
+
 .create-account-GX3 .rectangle-52-R93 {
   width: 56.8rem;
   height: 10rem;
@@ -27,6 +34,7 @@ body {
   top: 5.6rem;
   background-color: #d9d9d9;
 }
+
 .create-account-GX3 .desktop-1-953 {
   width: 144rem;
   height: 102.4rem;
@@ -36,12 +44,14 @@ body {
   overflow: hidden;
   background-color: #ffffff;
 }
+
 .create-account-GX3 .desktop-1-953 .rectangle-46-Ud7 {
   width: 72rem;
   height: 125.1rem;
   object-fit: cover;
   vertical-align: top;
 }
+
 .create-account-GX3 .group-12-1d3 {
   box-sizing: border-box;
   padding: 8rem 24.8rem 38.1rem 24.8rem;
@@ -56,8 +66,9 @@ body {
   background-color: #fffbf2;
   border-radius: 5rem 0 0 0;
 }
+
 .create-account-GX3 .group-12-1d3 .item--uyK {
-  margin: 0rem 0rem 3.4rem 7.4rem;
+  margin: 0rem 0rem 3.4rem 0rem;
   font-size: 4rem;
   font-weight: 800;
   line-height: 1.1725;
@@ -66,7 +77,9 @@ body {
   font-family: Roboto, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru {
   box-sizing: border-box;
   padding: 2.4rem;
@@ -80,12 +93,14 @@ body {
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-huB {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-huB .item--epR {
   margin-bottom: 0.6rem;
   font-size: 1.4rem;
@@ -96,6 +111,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-huB .sec-ZAh {
   box-sizing: border-box;
   padding: 0.8rem 0.8rem 0.6rem 0.8rem;
@@ -111,12 +127,14 @@ body {
   border-radius: 0.4rem;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-End {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-End .item--QBK {
   margin-bottom: 0.6rem;
   font-size: 1.4rem;
@@ -127,6 +145,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-End .sec-iho {
   box-sizing: border-box;
   padding: 0.8rem 0.8rem 0.6rem 0.8rem;
@@ -142,12 +161,14 @@ body {
   border-radius: 0.4rem;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-QKj {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-QKj .item--Aph {
   margin-bottom: 0.6rem;
   font-size: 1.4rem;
@@ -158,6 +179,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-QKj .sec-HeR {
   box-sizing: border-box;
   padding: 0.8rem 0.8rem 0.6rem 0.8rem;
@@ -173,12 +195,14 @@ body {
   border-radius: 0.4rem;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-Nfs {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-Nfs .item--Y4Z {
   margin-bottom: 0.6rem;
   font-size: 1.4rem;
@@ -189,6 +213,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-Nfs .sec-rb3 {
   box-sizing: border-box;
   padding: 0.8rem 0.8rem 0.6rem 0.8rem;
@@ -204,12 +229,14 @@ body {
   border-radius: 0.4rem;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-9q3 {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-9q3 .item--it9 {
   margin-bottom: 0.6rem;
   font-size: 1.4rem;
@@ -220,6 +247,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-9q3 .sec-S3T {
   box-sizing: border-box;
   padding: 0.8rem 0.8rem 0.6rem 0.8rem;
@@ -235,6 +263,7 @@ body {
   border-radius: 0.4rem;
   flex-shrink: 0;
 }
+
 .create-account-GX3 .group-12-1d3 .email-login-Nru .sec-vUR {
   width: 100%;
   height: 3.4rem;
