@@ -1,7 +1,14 @@
+'use client'
+
 import React from "react";
 import './login.css';
 import Image from "next/image";
+import { signIn } from "next-auth/react";
+import Google from "next-auth/providers/google";
+import { NextPage } from "next";
+import { useState } from "react";
 export default function login() {
+  
     return (
         <div>
         
@@ -34,9 +41,11 @@ export default function login() {
         <div className="text-right mt-2">
           <a href="#" className="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">ลืมรหัสผ่าน?</a>
         </div>
-
+      
         <button type="submit" className="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
-              px-4 py-3 mt-6">เข้าสู่ระบบ</button>
+        px-4 py-3 mt-6">เข้าสู่ระบบ</button>
+        
+        
       </form>
 
       <div class="flex items-center justify-center">
@@ -45,7 +54,7 @@ export default function login() {
         <hr class="my-6 border-gray-300 w-full" />
       </div>
 
-      <button type="button" className="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
+      <button onClick={() => signIn(Google)} type="button" className="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
             <div className="flex items-center justify-center">
             <Image src='/images/googlelogo.png' alt="googlelogo" width={24} height={24}/>
             <span className="ml-4">
