@@ -1,78 +1,294 @@
-import React from "react";
-export default function Page() {
+'use client'
+import React, { useState } from "react";
+import Image from "next/image";
+import Navbar from "./component/navbar/page";
+import Footer from "./component/footer/page";
+import Head from "next/head";
+import data from "./component/fakedata/fooddata";
+import Link from "next/link";
+import Card from "./component/card/page";
+
+export default function FoodRecipe() {
+  const [comments, setComments] = useState(""); // สร้าง state เพื่อเก็บข้อมูลที่ผู้ใช้กรอก
+
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch('/api/submitData', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ comments }), // ส่งข้อมูลในรูปแบบ JSON
+      });
+
+      if (response.ok) {
+        // ส่งข้อมูลสำเร็จ
+        console.log('ส่งข้อมูลสำเร็จ');
+        // ทำอย่างอื่นตามต้องการ, เช่น ล้างฟอร์ม
+        setComments("");
+      } else {
+        console.error('เกิดข้อผิดพลาดในการส่งข้อมูล');
+      }
+    } catch (error) {
+      console.error('เกิดข้อผิดพลาด:', error);
+    }
+  };
+
+  const all = data
+    .sort((a, b) => b.ratingCount - a.ratingCount)
+    .slice(0, 4)
+    .map((card, index) => {
+      if (card.kind === 'อาหารคาว') {
+        return (
+          <Card
+            key={index}
+            title={card.title}
+            img={card.img}
+            flag={card.flag}
+            url={`/foodRecipe/${card.tag}`}
+            rating={card.rating}
+            ratingCount={card.ratingCount}
+          />
+        );
+      } else if (card.kind === 'อาหารหวาน') {
+        return (
+          <Card
+            key={index}
+            title={card.title}
+            img={card.img}
+            flag={card.flag}
+            url={`/dessertRecipe/${card.tag}`}
+            rating={card.rating}
+            ratingCount={card.ratingCount}
+          />
+        );
+      }
+      return null; // ถ้าไม่ตรงกับเงื่อนไขใดๆ ให้ return null
+    });
+
+  const thai = data
+    .filter((card) => card.kind === 'อาหารคาว')
+    .filter((card) => card.nation === 'TH')
+    .slice(0, 4)
+    .map((card, index) => (
+      <Card
+        key={index}
+        title={card.title}
+        img={card.img}
+        flag={card.flag}
+        url={card.tag}
+        rating={card.rating}
+        ratingCount={card.ratingCount}
+      />
+    ));
+
+  const japan = data
+    .filter((card) => card.kind === 'อาหารคาว')
+    .filter((card) => card.nation === 'JP')
+    .slice(0, 4)
+    .map((card, index) => (
+      <Card
+        key={index}
+        title={card.title}
+        img={card.img}
+        flag={card.flag}
+        url={card.tag}
+        rating={card.rating}
+        ratingCount={card.ratingCount}
+      />
+    ));
+
+  const american = data
+    .filter((card) => card.kind === 'อาหารคาว')
+    .filter((card) => card.nation === 'US')
+    .slice(0, 4)
+    .map((card, index) => (
+      <Card
+        key={index}
+        title={card.title}
+        img={card.img}
+        flag={card.flag}
+        url={card.tag}
+        rating={card.rating}
+        ratingCount={card.ratingCount}
+      />
+    ));
+
+  const dessert = data
+    .filter((card) => card.kind === 'อาหารหวาน')
+    .slice(0, 4)
+    .map((card, index) => (
+      <Card
+        key={index}
+        title={card.title}
+        img={card.img}
+        flag={card.flag}
+        url={`/dessertRecipe/${card.tag}`}
+        rating={card.rating}
+        ratingCount={card.ratingCount}
+      />
+    ));
+
   return (
-    <div>
-      <section className="flex flex-col md:flex-row h-screen items-center">
-        <div className="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
-          <img src="https://source.unsplash.com/random" alt="" className="w-full h-full object-cover" />
+    <>
+      <Head>
+        <title>HOME</title>
+      </Head>
+      <Navbar />
+      <div className="px-2  2xl:px-64 xl:px-10 md:px-40 mb-40">
+        <div className="mb-16">
+          <a href="#" className="lg:flex justify-between xl:justify-center">
+            <div >
+              <h1 className=" text-red-700 text-3xl  xl:text-7xl font-extrabold underline lg:no-underline text-center lg:text-left">
+                หมูกรอบเทวดา หนังฟู เนื้อเปื่อย
+              </h1>
+              <br />
+              <div className="">
+                <p className="text-base absolute lg:relative invisible lg:visible ">
+                  หมูกรอบหรือที่ใครหลายๆคนเรียกว่าหมูสามชั้นทอดกรอบนับว่าเป็นอาหารที่อยู่คู่ครัว <br />
+                  ไทยมานานแล้วตำนานหมูกรอบนั้นก็เชื่อว่ามาจากประเทศจีนโดยสูตรหมูกรอบและ <br />
+                  วิธีทำหมูกรอบแบบดั้งเดิมจะใช้การย่างเป็นเวลา 8 ชม.จึงกรอบแต่ในปัจจุบัน <br />
+                  วิธีทำหมูกรอบนั้นก็ได้พัฒนาขึ้นมาจนเกิดสูตรหมูกรอบเยอะแยะมากมาย<br />
+                  แต่ว่าแต่ละสูตรจะได้หมูกรอบหน้าตาแตกต่างกันขนาดไหน
+                </p>
+              </div>
+
+            </div>
+            <Image src="/images/krob.png" alt="moohkrob" width={549} height={364} />
+          </a>
         </div>
-
-        <div className="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:mx-0 md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
-          <div className="w-full h-100">
-            <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">Log in to your account</h1>
-
-            <form className="mt-6" action="#" method="POST">
-              <div>
-                <label className="block text-gray-700">Email Address</label>
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Enter Email Address"
-                  className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
-                  autoFocus
-                  autoComplete="email" // เพิ่ม prop autoComplete
-                  required
-                />
+        <div className="">
+          <div>
+            <div className="text-2xl mb-[24px]">
+              <div className=" flex mb-4 justify-between font-normal">
+                <div className="flex">
+                  <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
+                  <h1 className="mx-1">เมนูยอดนิยม</h1>
+                </div>
+                <div className="flex ">
+                  <Link href="/popular" className="mx-1 hover:underline"><h1>ทั้งหมด</h1></Link>
+                  <span className="pt-2.5"><Image src="/images/right.png" alt="right1" width={16} height={16} /></span>
+                </div>
               </div>
 
-              <div className="mt-4">
-                <label className="block text-gray-700">Password</label>
-                <input
-                  type="password"
-                  name=""
-                  id=""
-                  placeholder="Enter Password"
-                  minLength="6" // เปลี่ยน prop minlength เป็น minLength
-                  className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
-                  required
-                />
+              <div className="flex justify-between">
+                {all}
               </div>
 
-              <div className="text-right mt-2">
-                <a href="#" className="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">
-                  Forgot Password?
-                </a>
+            </div>
+
+            <div className="text-2xl mb-[24px]">
+              <div className=" flex mb-4 justify-between font-normal">
+                <div className="flex">
+                  <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
+                  <h1 className="mx-1">อาหารไทย</h1>
+                </div>
+                <div className="flex">
+                  <Link href="/thai" className="mx-1 hover:underline"><h1>ทั้งหมด</h1></Link>
+                  <span className="pt-2.5"><Image src="/images/right.png" alt="right1" width={16} height={16} /></span>
+                </div>
               </div>
 
-              <button
-                type="submit"
-                className="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg px-4 py-3 mt-6"
-              >
-                Log In
-              </button>
-            </form>
-
-            <hr className="my-6 border-gray-300 w-full" />
-
-            <button
-              type="button"
-              className="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300"
-            >
-              <div className="flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="w-6 h-6" viewBox="0 0 48 48">
-                  
-                </svg>
-                <span className="ml-4">Log in with Google</span>
+              <div className="flex justify-between">
+                {thai}
               </div>
-            </button>
 
-            <p className="mt-8">
-              Need an account? <a href="#" className="text-blue-500 hover:text-blue-700 font-semibold">Create an account</a>
-            </p>
+            </div>
+
+            <div className="text-2xl mb-[24px]">
+              <div className=" flex mb-4 justify-between font-normal">
+                <div className="flex">
+                  <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
+                  <h1 className="mx-1">อาหารญี่ปุ่น</h1>
+                </div>
+                <div className="flex ">
+                  <Link href="/japan" className="mx-1 hover:underline"><h1>ทั้งหมด</h1></Link>
+                  <span className="pt-2.5"><Image src="/images/right.png" alt="right1" width={16} height={16} /></span>
+                </div>
+              </div>
+
+              <div className="flex justify-between">
+                {japan}
+              </div>
+
+            </div>
+
+            <div className="text-2xl mb-[48px]">
+              <div className=" flex mb-4 justify-between font-normal">
+                <div className="flex">
+                  <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
+                  <h1 className="mx-1">อาหารอเมริกัน</h1>
+                </div>
+                <div className="flex ">
+                  <Link href="/american" className="mx-1 hover:underline"><h1>ทั้งหมด</h1></Link>
+                  <span className="pt-2.5"><Image src="/images/right.png" alt="right1" width={16} height={16} /></span>
+                </div>
+              </div>
+
+              <div className="flex justify-between">
+                {american}
+              </div>
+
+            </div>
+
+            <div className="text-2xl mb-20">
+              <div className=" flex mb-4 justify-between font-normal">
+                <div className="flex">
+                  <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
+                  <h1 className="mx-1">ของหวาน</h1>
+                </div>
+                <div className="flex ">
+                  <Link href="/dessertRecipe" className="mx-1 hover:underline"><h1>ทั้งหมด</h1></Link>
+                  <span className="pt-2.5"><Image src="/images/right.png" alt="right1" width={16} height={16} /></span>
+                </div>
+              </div>
+
+              <div className="flex justify-between">
+                {dessert}
+              </div>
+
+            </div>
+
           </div>
         </div>
-      </section>
-    </div>
+        {/* comment */}
+        <div className=" mt-12">
+          <h1 className="text-3xl font-extrabold">ส่งความเห็นหรือเมนูที่ต้องการให้พวกเราเพิ่มลงในเว็บไซต์</h1>
+
+          <div className="w-full flex mt-8">
+            <img className="h-[64px] w-[64px] rounded-[90px] p-1 border-2 border-black" src="/images/gfish.png" alt="profilepicture" />
+            <div className="flex w-full">
+              <div className="flex  mr-6 w-full rounded-[10px]">
+                <textarea
+                  className="resize-none h-16 w-full rounded-[10px] border-[2px] border-black p-2 ml-[16px]"
+                  name="comments"
+                  id="comments"
+                  placeholder="ต้องการอะไรบอกเราหน่อยสิ..."
+                  value={comments}
+                  onChange={(e) => setComments(e.target.value)} // อัปเดตค่า comments ใน state
+                ></textarea>
+              </div>
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="p-3 bg-red-700 rounded-[15px] border-[2px] border-black mr-6 h-[48px] w-[128px] text-white"
+              >
+                ยืนยัน
+              </button>
+            </div>
+          </div>
+
+          {/* เมื่อยังไม่เข้าสู่ระบบ */}
+          <div className="w-full text-center bg-black my-6">
+            <h1 className="text-white p-2">ส่งความเห็นหรือเมนูที่ต้องการให้พวกเราเพิ่มลงในเว็บไซต์ได้เมื่อเข้าสู่ระบบ
+              <Link href="/login" className="text-red-600 mx-1 underline">คลิกที่นี่เพื่อเข้าสู่ระบบ</Link>
+            </h1>
+          </div>
+
+          <hr className=" h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }
