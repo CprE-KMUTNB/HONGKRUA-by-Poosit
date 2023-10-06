@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../component/card/page";
-import Navbar from "../component/navbar/page";
-import Footer from "../component/footer/page";
+import Card from "../../../components/card";
+import Navbar from "../../../components/navbar";
+import Footer from "../../../components/footer";
 import data from "../component/fakedata/ingredientsdata";
-import IngredientCard from "../component/ingredientCard/page";
+import IngredientCard from "../../../components/ingredientcard";
 export default function Ingredients() {
     const ingre = data.map((card,index)=>{
         return <IngredientCard tag ={card.tag} img = {card.img} title={card.title} detail={card.detail} key = {index}/>;

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Stars from "../stars/page";
+import Stars from "../../../../components/stars";
 export default function DessertCard(props) {
     const { title, img, flag, url,rating,ratingCount} = props;
     return (

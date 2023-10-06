@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../component/navbar/page";
-import Footer from "../component/footer/page";
+import Navbar from "../../../components/navbar";
+import Footer from "../../../components/footer";
 import data from "./data";
 import RequestBox from "../../../components/RequestBox";
 export default function home() {

@@ -1,12 +1,12 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import Navbar from "./component/navbar/page";
-import Footer from "./component/footer/page";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 import Head from "next/head";
 import data from "./component/fakedata/fooddata";
 import Link from "next/link";
-import Card from "./component/card/page";
+import Card from "../../components/card";
 
 export default function FoodRecipe() {
   const [comments, setComments] = useState(""); // สร้าง state เพื่อเก็บข้อมูลที่ผู้ใช้กรอก

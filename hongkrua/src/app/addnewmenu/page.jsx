@@ -1,6 +1,6 @@
 "use client"
-import Navbar from "../component/navbar/page";
-import Footer from "../component/footer/page";
+import Navbar from "../../../components/navbar";
+import Footer from "../../../components/footer";
 import React, { useState, useRef } from "react";
 import { nation } from "./nation";
 

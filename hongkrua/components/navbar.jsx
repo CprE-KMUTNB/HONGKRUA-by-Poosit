@@ -18,6 +18,7 @@ export default function Navbar() {
                         <li><Link className="text-white text-xl " href="/like">สูตรอาหารที่ถูกใจ</Link></li>
                         <li><Link className="text-white text-xl " href="/addnewmenu">เขียนสูตรอาหาร</Link></li>
                         <li><Link className="text-white text-xl " href="/checkrequest">ตรวจสอบรีเควส</Link></li>
+                        <li><Link className="text-white text-xl " href="/checkrequestfornewmenu">ตรวจสอบสูตรอาหาร</Link></li>
                         <br/>
                     </ul>
                 </div>

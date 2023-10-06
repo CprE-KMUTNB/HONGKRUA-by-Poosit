@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "@/app/component/navbar/page";
-import Footer from "@/app/component/footer/page";
+import Navbar from "../../../components/navbar";
+import Footer from "../../../components/footer";
 import data from "./fakeuserdata";
 
 export default function home() {
