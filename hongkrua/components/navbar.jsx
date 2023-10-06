@@ -40,9 +40,7 @@ export default function Navbar() {
                         </Link> 
                     </li>
                 </ul>
-            </div>
-            
-            
+            </div>      
         </nav>
         
     )
