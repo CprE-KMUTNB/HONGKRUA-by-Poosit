@@ -1,5 +1,5 @@
 import React from "react";
-import Stars from "../stars/page";
+import Stars from "./stars";
 export default function Box(props) {
     const { username, img, usercomment, rating } = props;
     return (

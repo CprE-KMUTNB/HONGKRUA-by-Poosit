@@ -1,13 +1,13 @@
 "use client"
 import React from "react";
-import Navbar from "@/app/component/navbar/page";
-import Footer from "@/app/component/footer/page";
+import Navbar from "../../../../components/navbar";
+import Footer from "../../../../components/footer";
 import Link from "next/link";
 import {ontherusers,usercomment} from "./comment";
-import Box from "@/app/component/commentbox/page";
-import Slider from "@/app/component/slider/page";
+import Box from "../../../../components/commentbox";
+import Slider from "../../../../components/slider";
 import { foodIngredients, food, cookingSteps } from "./data";// เปลี่ยนเส้นทางไปยังไฟล์ที่เก็บข้อมูล
-import Likebutton from "@/app/component/likebutton/page";
+import Likebutton from "../../../../components/likebutton";
 import { useState } from "react";
 import StarRating from "../../../../components/StarsRating";
 

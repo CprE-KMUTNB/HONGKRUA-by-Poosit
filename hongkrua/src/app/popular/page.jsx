@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../component/card/page";
-import Navbar from "../component/navbar/page";
-import Footer from "../component/footer/page";
+import Card from "../../../components/card";
+import Navbar from "../../../components/navbar";
+import Footer from "../../../components/footer";
 import data from "../component/fakedata/fooddata";
 export default function home() {
     const all = data

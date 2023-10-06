@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Stars from "../stars/page";
+import Stars from "./stars";
 export default function Card(props) {
     const { title, img, flag, url,rating,ratingCount} = props;
     return (
-        <Link href={url} className="h-[260px] w-[300px] my-3 shadow">
+        <div className="h-[280px] w-[300px] mb-4">
+            <Link href={url} className="h-[260px] w-[300px] mb-4">
             <div className="">
                 <pic >
                     <img className="absolute p-1" src={flag} alt="logo" width={32} height={24} />
@@ -23,5 +24,11 @@ export default function Card(props) {
                 </div>
             </div>
         </Link>
+        <form action="" className="flex w-full justify-end">
+            <button type = "" className="py-1 px-4 bg-red-600 border-2 border-black text-base text-white">ลบ</button>
+        </form>
+        </div>
+        
+        
     )
 }

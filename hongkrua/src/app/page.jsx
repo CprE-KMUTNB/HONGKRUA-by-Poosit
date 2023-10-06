@@ -1,12 +1,12 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import Navbar from "./component/navbar/page";
-import Footer from "./component/footer/page";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 import Head from "next/head";
 import data from "./component/fakedata/fooddata";
 import Link from "next/link";
-import Card from "./component/card/page";
+import Card from "../../components/card";
 
 export default function FoodRecipe() {
   const [comments, setComments] = useState(""); // สร้าง state เพื่อเก็บข้อมูลที่ผู้ใช้กรอก
@@ -159,7 +159,7 @@ export default function FoodRecipe() {
         </div>
         <div className="">
           <div>
-            <div className="text-2xl mb-[24px]">
+            <div className="text-2xl mb-[48px]">
               <div className=" flex mb-4 justify-between font-normal">
                 <div className="flex">
                   <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
@@ -177,7 +177,7 @@ export default function FoodRecipe() {
 
             </div>
 
-            <div className="text-2xl mb-[24px]">
+            <div className="text-2xl mb-[48px]">
               <div className=" flex mb-4 justify-between font-normal">
                 <div className="flex">
                   <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
@@ -195,7 +195,7 @@ export default function FoodRecipe() {
 
             </div>
 
-            <div className="text-2xl mb-[24px]">
+            <div className="text-2xl mb-[48px]">
               <div className=" flex mb-4 justify-between font-normal">
                 <div className="flex">
                   <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
@@ -213,7 +213,7 @@ export default function FoodRecipe() {
 
             </div>
 
-            <div className="text-2xl mb-[48px]">
+            <div className="text-2xl mb-[64px]">
               <div className=" flex mb-4 justify-between font-normal">
                 <div className="flex">
                   <span className="pt-2"><Image src="/images/down.png" alt="down1" width={16} height={16} /></span>
