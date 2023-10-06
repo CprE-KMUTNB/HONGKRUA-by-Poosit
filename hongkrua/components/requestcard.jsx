@@ -5,7 +5,7 @@ import Stars from "./stars";
 export default function RequestCard(props) {
     const { title, img, flag, url, rating, ratingCount } = props;
     return (
-        <div className="h-[260px] w-[300px] my-4">
+        <div className="h-[260px] w-[300px] my-5">
             <Link href={url} className="">
                 <div className="">
                     <pic >
