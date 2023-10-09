@@ -1,65 +1,81 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser"); // ต้องเพิ่ม middleware นี้เพื่อให้ Express อ่านข้อมูลจาก body ของคำขอ
-const cors = require("cors")
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const bcrypt = require("bcrypt"); // เพิ่ม bcrypt เพื่อใช้ในการเข้ารหัสรหัสผ่าน
+
 const port = 3001;
 const app = express();
-app.use(bodyParser.json()); // เพิ่ม middleware นี้เพื่อให้ Express อ่านข้อมูล JSON จาก body ของคำขอ
-app.use(cors())
-// เชื่อมต่อกับ MongoDB
+
+app.use(bodyParser.json());
+app.use(cors());
+
 mongoose.connect(
-  "mongodb+srv://poohpooh2547:1234@cluster0.fwcav45.mongodb.net/usersdb",
+  "mongodb+srv://poohpooh2547:1234@cluster0.fwcav45.mongodb.net/hongkruadb",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }
 );
 
-// สร้าง database และ collection
 const User = mongoose.model("User", {
   username: String,
   email: String,
   password: String,
 });
 
-// เลื่อนการสร้างดัชนีไปยังภายในฟังก์ชันที่ใช้ในการสร้างผู้ใช้
-// db.collection("users").createIndex({ username: 1 }, { unique: true });
-
-// ฟังก์ชันสำหรับบันทึกข้อมูลผู้ใช้ลงใน database
-async function registerUser(username, email, password) {
-  const user = new User({
-    username,
-    email,
-    password,
-  });
-
+async function loginUser(email, password) {
   try {
-    await user.save();
-    return user;
+    const user = await User.findOne({ email }).exec();
+
+    if (!user) {
+      return null; // ไม่พบผู้ใช้
+    }
+
+    const isPasswordValid = await bcrypt.compare(password, user.password); // เปรียบเทียบรหัสผ่าน
+
+    if (isPasswordValid) {
+      return user; // เข้าสู่ระบบสำเร็จ
+    } else {
+      return null; // รหัสผ่านไม่ถูกต้อง
+    }
   } catch (error) {
-    return null;
+    return null; // เกิดข้อผิดพลาดในการค้นหาผู้ใช้
   }
 }
 
-// จัดการคำขอ HTTP
 app.post("/api/register", async (req, res) => {
   const { username, email, password } = req.body;
-  console.log(req.body)
-  // ตรวจสอบว่าข้อมูลฟอร์มถูกต้องหรือไม่
-  if (username && email && password && password === req.body.confirmPassword) {
-    // บันทึกข้อมูลผู้ใช้ลงใน database
-    const user = await registerUser(username, email, password);
 
-    if (user) {
-      // ตอบกลับข้อมูลผู้ใช้
-      res.json(user);
-    } else {
-      // ตอบกลับข้อความแจ้งข้อผิดพลาดถ้ามีข้อผิดพลาดในการบันทึก
+  if (username && email && password && password === req.body.confirmPassword) {
+    const hashedPassword = await bcrypt.hash(password, 10); // เข้ารหัสรหัสผ่าน
+    const user = new User({ username, email, password: hashedPassword });
+
+    try {
+      const savedUser = await user.save();
+      res.json(savedUser);
+    } catch (error) {
       res.status(400).json({ error: "ไม่สามารถลงทะเบียนผู้ใช้ได้" });
     }
   } else {
-    // ตอบกลับข้อความแจ้งข้อผิดพลาด
     res.status(400).json({ error: "ข้อมูลฟอร์มไม่ถูกต้อง" });
+  }
+});
+
+app.post("/api/login", async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await loginUser(email, password);
+
+    if (!user) {
+      return res.status(401).json({ message: "ไม่พบผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง" });
+    }
+
+    res.status(200).json({ message: "เข้าสู่ระบบสำเร็จ" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "เกิดข้อผิดพลาดในการเข้าสู่ระบบ" });
   }
 });
 
