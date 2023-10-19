@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 
@@ -29,4 +29,4 @@ router.post("/api/register", async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = router; */

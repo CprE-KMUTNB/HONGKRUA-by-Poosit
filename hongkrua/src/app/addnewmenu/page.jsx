@@ -5,7 +5,7 @@ import React, { useState, useRef } from "react";
 import { nation } from "./nation";
 
 export default function Home() {
-    const [stepList, setStepList] = useState([{ step: "", image1: null, image2: null }]);
+    const [stepList, setStepList] = useState([{ step: "", image1: null, image2: null, image1Base64: "", image2Base64: "" }]);
     const fileInputRefs1 = useRef([]);
     const fileInputRefs2 = useRef([]);
 
@@ -18,21 +18,32 @@ export default function Home() {
     });
 
     const addStep = () => {
-        setStepList([...stepList, { step: "", image1: null, image2: null }]);
+        setStepList([...stepList, { step: "", image1: null, image2: null, image1Base64: "", image2Base64: "" }]);
     };
 
     const handleImageChange = (e, index, imageNumber) => {
         const file = e.target.files[0];
         const list = [...stepList];
-
+    
         if (imageNumber === 1) {
             list[index].image1 = file;
         } else if (imageNumber === 2) {
             list[index].image2 = file;
         }
-
-        setStepList(list);
+    
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            if (imageNumber === 1) {
+                list[index].image1Base64 = e.target.result; // เก็บ Base64 string ใน stepList
+            } else if (imageNumber === 2) {
+                list[index].image2Base64 = e.target.result; // เก็บ Base64 string ใน stepList
+            }
+            setStepList(list);
+        };
+    
+        reader.readAsDataURL(file);
     };
+    
 
     const handleFoodChange = (event) => {
         const file = event.target.files[0];
@@ -69,20 +80,46 @@ export default function Home() {
         setStepList(list);
     };
 
-    const handleFormSubmit = () => {
-        // ทำบางอย่างกับข้อมูลที่ต้องการส่งไปยังเซิร์ฟเวอร์
-        console.log("ส่งข้อมูล:", formData, stepList, selectedImage);
-
-        // ล้างค่าหลังจากส่งเรียบร้อย
-        setFormData({
-            title: "",
-            nation: nation[0].code,
-            type: "อาหารคาว",
-            details: "",
+    const handleFormSubmit = async () => {
+        console.log('abc', formData,stepList,selectedImage)
+        const newStepList = stepList.map(({step, image1Base64, image2Base64}) => {
+            return {
+                step,
+                "image1": image1Base64,
+                "image2": image2Base64
+            };
         });
-        setStepList([{ step: "", image1: null, image2: null }]);
-        setSelectedImage(null);
+        console.log(newStepList)
+        try {
+            const newRecipe = {
+                title: formData.title,
+                selectedImage,
+                nation: formData.nation,
+                type: formData.type,
+                details: formData.details,
+                steps: newStepList,
+            };
+            console.log(JSON.stringify(newRecipe ))
+            const response = await fetch('http://localhost:3001/api/recipes', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newRecipe)
+            });
+    
+            if (response.ok) {
+                // ส่งข้อมูลเรียบร้อย
+                console.log('ส่งสูตรอาหารสำเร็จ');
+                // รีเซ็ตฟิลด์แบบฟอร์มหรือเปลี่ยนเส้นทางไปหน้าสำเร็จ
+            } else {
+                console.error('การส่งสูตรอาหารล้มเหลว',response.statusText);
+            }
+        } catch (error) {
+            console.error('ข้อผิดพลาด:', error);
+        }
     };
+    
 
 
     return (

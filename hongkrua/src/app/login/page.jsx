@@ -1,4 +1,5 @@
 "use client";
+import { useSession } from "next-auth/react";
 
 import React from "react";
 import "./login.css";
@@ -11,6 +12,9 @@ export default function login() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { data: session } = useSession();
+  const token = session?.token;
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,13 +23,17 @@ export default function login() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+
       },
       body: JSON.stringify({ email, password }),
     });
 
     if (response.ok) {
-
+      const { token,user } = await response.json();
       console.log("เข้าสู่ระบบสำเร็จ");
+      console.log(token);
+      console.log(user);
       router.push('/')
       // ทำสิ่งที่คุณต้องการหลังจากเข้าสู่ระบบ เช่น เปลี่ยนหน้าหรือดำเนินการอื่น ๆ
     } else {

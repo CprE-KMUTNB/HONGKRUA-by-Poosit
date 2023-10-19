@@ -1,39 +1,39 @@
-"use client"
+'use client'
 import React from "react";
+import { useRouter } from "next/navigation";
 import Navbar from "../../../../components/navbar";
 import Footer from "../../../../components/footer";
 import Link from "next/link";
-import {ontherusers,usercomment} from "./comment";
+import { ontherusers, usercomment } from "../../../../pages/kawin/comment";
 import Box from "../../../../components/commentbox";
 import Slider from "../../../../components/slider";
-import { foodIngredients, food, cookingSteps } from "./data";// เปลี่ยนเส้นทางไปยังไฟล์ที่เก็บข้อมูล
+import { foodIngredients, food, cookingSteps } from "../../../../pages/kawin/data";
 import Likebutton from "../../../../components/likebutton";
-import { useState } from "react";
 import StarRating from "../../../../components/StarsRating";
 
-function browny() {
-
-    const othercomment = ontherusers.map((data, index) => (
-        <Box key={index} username={data.username} img={data.img} usercomment={data.usercomment} rating={data.rating} />
-    ));
-
-    const Howtodoit = cookingSteps.map((data, index) => (
-        <div key={index}>
-            <h1 className="text-base mt-4 mb-2">{`${index + 1}. ${data.step}`}</h1>
-            <div className="grid grid-cols-2 justify-center">
-                <img className="h-64 w-auto" src={data.img1} alt={`step${index + 1}`} />
-                <img className="h-64 w-auto" src={data.img2} alt={`step${index + 1}`} />
-            </div>
-        </div>
-    ));
+function RecipePage() {
 
 
-    const ingredient = foodIngredients.map((ingredient, index) => (
-        <li key={index} className="text-base">
-            {ingredient.ingre}
-        </li>
-    ));
 
+  const othercomment = ontherusers.map((data, index) => (
+    <Box key={index} username={data.username} img={data.img} usercomment={data.usercomment} rating={data.rating} />
+  ));
+
+  const Howtodoit = cookingSteps.map((data, index) => (
+    <div key={index}>
+      <h1 className="text-base mt-4 mb-2">{`${index + 1}. ${data.step}`}</h1>
+      <div className="grid grid-cols-2 justify-center">
+        <img className="h-64 w-auto" src={data.img1} alt={`step${index + 1}`} />
+        <img className="h-64 w-auto" src={data.img2} alt={`step${index + 1}`} />
+      </div>
+    </div>
+  ));
+
+  const ingredient = foodIngredients.map((ingredient, index) => (
+    <li key={index} className="text-base">
+      {ingredient.ingre}
+    </li>
+  ));
     return (
         <>
             <Navbar />
@@ -109,6 +109,6 @@ function browny() {
     );
 }
 
-export default browny;
+export default RecipePage;
 
 

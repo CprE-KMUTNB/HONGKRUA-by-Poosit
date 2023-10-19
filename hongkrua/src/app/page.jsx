@@ -9,6 +9,7 @@ import Link from "next/link";
 import Card from "../../components/card";
 
 export default function FoodRecipe() {
+  
   const [comments, setComments] = useState(""); // สร้าง state เพื่อเก็บข้อมูลที่ผู้ใช้กรอก
 
   const handleSubmit = async () => {

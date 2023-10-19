@@ -6,11 +6,12 @@ export default function RequestCard(props) {
     const { title, img, flag, url, rating, ratingCount } = props;
     return (
         <div className="h-[260px] w-[300px] my-5">
-            <Link href={url} className="">
+            <Link href='#' className="">
                 <div className="">
                     <pic >
                         <img className="absolute p-1" src={flag} alt="logo" width={32} height={24} />
-                        <img className="h-[200px] w-[300px]" src={img} alt="a" />
+                        {/* <img className="h-[200px] w-[300px]" src={img} alt="a" /> */}
+                        {img}
                     </pic>
 
                     <div>
@@ -18,8 +19,8 @@ export default function RequestCard(props) {
                             {title}
                         </p>
                         <div className="mt-1 flex">
-                            <Stars rating={rating} />
-                            <p className="text-sm">{ratingCount} rating</p>
+                            <Stars rating = {0} />
+                            <p className="text-sm">{0} rating</p>
                         </div>
                     </div>
                 </div>

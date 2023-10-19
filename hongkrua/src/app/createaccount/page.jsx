@@ -28,7 +28,7 @@ export default function CreateAccount() {
       formData.email &&
       formData.password &&
       formData.confirmPassword &&
-      formData.password === formData.confirmPassword
+      formData.password === formData.confirmPassword 
     ) {
       try {
         const response = await fetch("http://localhost:3001/api/register", {

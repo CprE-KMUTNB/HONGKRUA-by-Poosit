@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Navbar() {
     return (
-        
         <nav className="py-5 bg-black shadow flex justify-between px-0 2xl:px-64  xl:px-30 : lg:px-10 w-full mb-20" >
             <div className="lg:flex ">
                 <span>
