@@ -68,7 +68,10 @@ export default function Home() {
           <div className="grid grid-cols-4 ">{food}</div>
         </div>
       </div>
-      <Footer />
+      <div className="mt-[560px]">
+        <Footer />
+      </div>
+      
     </>
   );
 }
